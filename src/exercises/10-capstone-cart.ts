@@ -19,15 +19,20 @@
 
 // TODO: define CartItem
 export type CartItem = {
+
   productId: number;
   name: string;
   unitPrice: number;
   quantity: number ; // >= 1
+
 };
+
 // TODO: define Cart
 export type Cart = {
+
   items: CartItem[];
   currency: "ZAR" | "USD";
+  
 };
 
 /* ---- 10b. Operations (all PURE — never mutate the input cart) ---- */
